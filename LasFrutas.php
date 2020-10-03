@@ -21,35 +21,67 @@
                         <div class="row">
 
 
-                        	<?php for ($i=1; $i <=5 ; $i++) { 
-                        		
-                        	 ?>
 
-                            <input type="text" class="form-control" placeholder="fruta" name="fruta" style="width: 300px;"><br>
+                            <input type="text" class="form-control" placeholder="fruta" name="fruta1" style="width: 300px;"><br>
                                                       
-                            <input type="text" class="form-control" placeholder="url" name="url" style="width: 300px;"><br>
-                            <?php }?>
+                            <input type="text" class="form-control" placeholder="url" name="url1" style="width: 300px;"><br>
+
+                            <input type="text" class="form-control" placeholder="fruta" name="fruta2" style="width: 300px;"><br>
+                                                      
+                            <input type="text" class="form-control" placeholder="url" name="url2" style="width: 300px;"><br>
+
+                            <input type="text" class="form-control" placeholder="fruta" name="fruta3" style="width: 300px;"><br>
+                                                      
+                            <input type="text" class="form-control" placeholder="url" name="url3" style="width: 300px;"><br>
+
+                            <input type="text" class="form-control" placeholder="fruta" name="fruta4" style="width: 300px;"><br>
+                                                      
+                            <input type="text" class="form-control" placeholder="url" name="url4" style="width: 300px;"><br>
+
+                            <input type="text" class="form-control" placeholder="fruta" name="fruta5" style="width: 300px;"><br>
+                                                      
+                            <input type="text" class="form-control" placeholder="url" name="url5" style="width: 300px;"><br>
+                         
                             
                         </div>
                         	<button type="submit" class="btn btn-primary mt-5" name="mostrar" style="margin: 10px;">mostrar</button>
                        
 
-                        <div class="card" style="width: 37rem; height: 10rem;">
+                        <div class="card" style="width: 37rem; height: 15rem;">
 						  <?php
 
 						if (isset($_POST["mostrar"])) {
+                            $frutas1=$_POST["fruta1"];
+                            $urls1=$_POST["url1"]; 
 
-						$frutas=$_POST["fruta"];
-						$urls=$_POST["url"];									
+                            $frutas2=$_POST["fruta2"];
+                            $urls2=$_POST["url2"];
 
-						print_r($_POST);
-						//print_r($urls[$i]);
+                            $frutas3=$_POST["fruta3"];
+                            $urls3=$_POST["url3"];
 
-						
+                            $frutas4=$_POST["fruta4"];
+                            $urls4=$_POST["url4"];
+
+                            $frutas5=$_POST["fruta5"];
+                            $urls5=$_POST["url5"];
+
+
+                                echo($frutas1." ".$urls1);
+                                echo "<br>";
+                                echo($frutas2." ".$urls2);
+                                echo "<br>";
+                                echo($frutas3." ".$urls3);
+                                echo "<br>";
+                                echo($frutas4." ".$urls4);
+                                echo "<br>";
+                                echo($frutas5." ".$urls5);
+                                
+                            
 						}
 						?>
-						
-						</div>
+                            
+                        </div>
 						</div>                      
                     </form>
                 </div>
