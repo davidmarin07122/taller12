@@ -75,9 +75,7 @@
                                 echo "<br>";
                                 echo($frutas4." ".$urls4);
                                 echo "<br>";
-                                echo($frutas5." ".$urls5);
-                                
-                            
+                                echo($frutas5." ".$urls5);                                                           
 						}
 						?>
                             
